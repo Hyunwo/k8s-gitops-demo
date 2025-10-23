@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: ghcr.io/hyunwo/k8s-gitops-demo/sample-app:latest
+        image: ghcr.io/hyunwo/k8s-gitops-demo/sample-app:main-84a46e8
         ports:
         - containerPort: 3000
         env:
