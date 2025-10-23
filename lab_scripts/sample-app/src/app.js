@@ -4,10 +4,11 @@ const port = 3000;
 
 app.get('/', (req, res) => {
   res.json({
-    message: 'Hello from Kubernetes GitOps!',
-    version: process.env.APP_VERSION || 'v1.0.0',
+    message: 'Hello from Kubernetes GitOps! (Updated)',
+    version: process.env.APP_VERSION || 'v2.0.0',
     timestamp: new Date().toISOString(),
-    hostname: require('os').hostname()
+    hostname: require('os').hostname(),
+    update: 'This is version 2.0!'
   });
 });
 
