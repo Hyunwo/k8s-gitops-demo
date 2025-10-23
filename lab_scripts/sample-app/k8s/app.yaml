@@ -17,6 +17,8 @@ spec:
         prometheus.io/port: "3000"
         prometheus.io/path: "/metrics"
     spec:
+      imagePullSecrets:
+      - name: ghcr-secret
       containers:
       - name: app
         image: ghcr.io/hyunwo/k8s-gitops-demo/sample-app:main-84a46e8
