@@ -21,7 +21,7 @@ spec:
       - name: ghcr-secret
       containers:
       - name: app
-        image: ghcr.io/hyunwo/k8s-gitops-demo/sample-app:main-be1884e
+        image: ghcr.io/hyunwo/k8s-gitops-demo/sample-app:main-c0eb64d
         ports:
         - containerPort: 3000
         env:
